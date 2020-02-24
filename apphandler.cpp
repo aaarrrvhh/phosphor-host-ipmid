@@ -594,7 +594,7 @@ ipmi::RspType<uint8_t,  // Device ID
     const char* filename = "/usr/share/ipmi-providers/dev_id.json";
     constexpr auto ipmiDevIdStateShift = 7;
     constexpr auto ipmiDevIdFw1Mask = ~(1 << ipmiDevIdStateShift);
-
+    printf("aaarrv-get device id \n");
     if (!dev_id_initialized)
     {
         try
